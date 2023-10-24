@@ -1,0 +1,11 @@
+<div class="card bg-accent text-primary-content shadow-xl"
+   id="dom_id_<%= product.id %>" data-controller="barcode">
+      <figure class="mt-4"><img data-barcode-target="barcodeImage" /></figure>
+
+
+   <div class="card-body">
+      <h2 class="card-title text-base"><%= product.name %></h2>
+      <p class="text-sm" data-barcode-target="barcode">
+         <strong>Barcode:</strong> <%= product.barcode %></p>
+   </div>
+</div>

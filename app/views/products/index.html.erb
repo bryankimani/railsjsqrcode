@@ -1,0 +1,5 @@
+<div class="grid gap-4 grid-cols-4">
+    <% @products.each do |product| %>
+        <%= render 'product', { product: product } %>
+    <% end %>
+</div>
