@@ -1,5 +1,19 @@
-<div class="grid gap-4 grid-cols-4">
-    <% @products.each do |product| %>
-        <%= render 'product', { product: product } %>
-    <% end %>
+<div class="container mb-10 mt-10">
+    <div class="hero bg-base-200">
+        <div class="hero-content text-center">
+            <div class="max-w-md">
+            <h1 class="text-5xl font-bold">Create your custom QR Code</h1>
+            <p class="py-6">The professional QR Code Management platform to create, track and edit all your QR codes in one place.</p>
+            <button class="btn btn-accent mt-4 mb-8">Get Started Now</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="grid gap-4 grid-cols-4">
+        <% @products.each do |product| %>
+            <%= render 'product', { product: product } %>
+        <% end %>
+    </div>
 </div>
